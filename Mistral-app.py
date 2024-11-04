@@ -45,8 +45,8 @@ def get_conversation_chain(vectorstore):
         template=template, input_variables=["context", "question"]
     )
     
-   
-    llm = HuggingFaceEndpoint(repo_id="mistralai/Mistral-7B-Instruct-v0.2")
+    api_key = os.environ['HUGGINGFACEHUB_API_TOKEN'] = st.secrets['HUGGINGFACEHUB_API_TOKEN']   
+    llm = HuggingFaceEndpoint(repo_id="mistralai/Mistral-7B-Instruct-v0.2", huggingfacehub_api_token=api_key)
 
 
     retriever=vectorstore.as_retriever(search_type='similarity', search_kwargs={"k": 3})
