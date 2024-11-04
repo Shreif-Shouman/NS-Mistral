@@ -1,20 +1,30 @@
-#langchain
-pydantic==1.10.7
-langchain_community
-PyPDF2==3.0.1
-python-dotenv==1.0.0
-streamlit
-openai==0.27.6
-#faiss-cpu==1.7.4
-altair==4
-tiktoken==0.4.0
-# uncomment to use huggingface llms
-huggingface-hub==0.22.2
+# Streamlit and dependencies
+streamlit==1.25.0  # Adjust to latest stable if needed
 
-# uncomment to use instructor embeddings
-InstructorEmbedding==1.0.1
+# LangChain and its dependencies
+langchain==0.0.152
+langchain_community==0.0.16  # Ensure compatibility with langchain
+
+# FAISS for vector storage
+faiss-cpu==1.7.3  # Use faiss-gpu if GPU is available and supported on Streamlit
+
+# Sentence Transformers for embeddings
 sentence-transformers==2.2.2
 
-langchain==0.0.152  # Example version; replace with the one that works locally
-faiss-cpu==1.7.3    # Example version; replace as necessary
+# Hugging Face dependencies
+transformers==4.30.2
+huggingface-hub==0.16.4
 
+# Pydantic for data validation
+pydantic==1.10.7  # Compatible with langchain
+
+# PyTorch for Hugging Face models
+torch==2.0.1  # Match version with compatible CUDA if GPU support needed on Streamlit
+
+# Additional utility libraries
+numpy==1.24.3
+scipy==1.10.1
+pickle5==0.0.11  # For backward compatibility with pickling in some cases
+
+# To handle compatibility for FlashrankRerank if required
+rank-bm25==0.2.2  # BM25 for ranking, if required by Flashrank
