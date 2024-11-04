@@ -1,9 +1,9 @@
 # Streamlit and dependencies
-streamlit==1.25.0  # Adjust to latest stable if needed
+streamlit  # Adjust to latest stable if needed
 
 # LangChain and its dependencies
-langchain==0.0.152
-langchain_community==0.0.16  # Ensure compatibility with langchain
+langchain==0.3.6
+langchain_community # Ensure compatibility with langchain
 
 # FAISS for vector storage
 faiss-cpu==1.7.3  # Use faiss-gpu if GPU is available and supported on Streamlit
