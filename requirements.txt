@@ -1,12 +1,12 @@
 # Streamlit and dependencies
-streamlit  # Adjust to latest stable if needed
+streamlit==1.25.0
 
-# LangChain and its dependencies
+# LangChain and its dependencies (remove specific version to let pip choose)
 langchain==0.3.6
-langchain_community # Ensure compatibility with langchain
+langchain_community
 
 # FAISS for vector storage
-faiss-cpu==1.7.3  # Use faiss-gpu if GPU is available and supported on Streamlit
+faiss-cpu==1.7.3
 
 # Sentence Transformers for embeddings
 sentence-transformers==2.2.2
@@ -15,15 +15,12 @@ sentence-transformers==2.2.2
 transformers==4.30.2
 huggingface-hub==0.16.4
 
-# Pydantic for data validation
-pydantic==1.10.7  # Compatible with langchain
-
 # PyTorch for Hugging Face models
-torch==2.0.1  # Match version with compatible CUDA if GPU support needed on Streamlit
+torch==2.0.1
 
 # Additional utility libraries
 numpy==1.24.3
 scipy==1.10.1
 
 # To handle compatibility for FlashrankRerank if required
-rank-bm25==0.2.2  # BM25 for ranking, if required by Flashrank
+rank-bm25==0.2.2
