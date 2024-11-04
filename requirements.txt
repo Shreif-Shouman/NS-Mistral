@@ -24,7 +24,6 @@ torch==2.0.1  # Match version with compatible CUDA if GPU support needed on Stre
 # Additional utility libraries
 numpy==1.24.3
 scipy==1.10.1
-pickle5==0.0.11  # For backward compatibility with pickling in some cases
 
 # To handle compatibility for FlashrankRerank if required
 rank-bm25==0.2.2  # BM25 for ranking, if required by Flashrank
