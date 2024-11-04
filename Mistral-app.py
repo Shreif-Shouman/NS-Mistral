@@ -51,7 +51,7 @@ def get_conversation_chain(vectorstore):
 
     retriever=vectorstore.as_retriever(search_type='similarity', search_kwargs={"k": 3})
     # Initialize the FlashrankRerank compressor with the correct model name
-    #compressor = FlashrankRerank()
+    compressor = FlashrankRerank()
     
 
     #Continue with the ContextualCompressionRetriever setup
