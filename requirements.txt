@@ -1,8 +1,8 @@
 # Streamlit and dependencies
-streamlit==1.25.0
+streamlit
 
 # LangChain and its dependencies (remove specific version to let pip choose)
-langchain==0.3.6
+langchain
 langchain_community
 
 # FAISS for vector storage
