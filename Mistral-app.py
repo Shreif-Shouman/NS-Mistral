@@ -56,7 +56,7 @@ def get_conversation_chain(vectorstore):
 
     #Continue with the ContextualCompressionRetriever setup
     compression_retriever = ContextualCompressionRetriever(
-        base_retriever=retriever, base_compressor=compressor
+        base_retriever=retriever, document_compressor=compressor
     )
     
     conversation_chain = RetrievalQA.from_chain_type(
